@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Page Title</title> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />
+<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="home"> 
+<div data-role="header"><h1>Pick your burrito</div> 
+<!-- /header -->
+
+<div data-role="content"><p><a href="#tortilla">Start Here</a></p></div> 
+<!-- /content -->
+
+<div data-role="footer"><h4>Page Footer</h4></div> 
+<!-- /footer -->
+
+</div> 
+<!-- /page -->
+
+<div data-role="page" id="tortilla"> 
+<div data-role="header"><h1>Choose your tortilla</div> 
+<!-- /header -->
+
+<div data-role="fieldcontain">
+<label for="select-choice-1" class="select">Tortilla:</label>
+<select name="select-choice-1" id="select-choice-1">
+<option value="white">white</option>
+<option value="wheat">wheat</option>
+<option value="chipotle">chipotle</option>
+<option value="spinach">spinach</option>
+</select>
+</div>
+
+<div data-role="fieldcontain">
+<label for="select-choice-2" class="select">Rice: </label>
+<select name="select-choice-2" id="select-choice-2">
+<option value="spanish">Spanish</option>
+<option value="bbq">BBQ</option>
+<option value="brown">Brown</option>
+</select>
+</div>
+
+<div data-role="fieldcontain">
+<label for="select-choice-3" class="select">Beans: </label>
+<select name="select-choice-3" id="select-choice-3">
+<option value="black">Black</option>
+<option value="refried">Refried</option>
+<option value="chili">Chili</option>
+</select>
+</div>
+
+<div data-role="fieldcontain">
+<label for="select-choice-4" class="select">Type: </label>
+<select name="select-choice-4" id="select-choice-4">
+<option value="veggie">Vegetarian</option>
+<option value="chicken">Chicken</option>
+<option value="cajun">Cajun Chicken</option>
+<option value="beef">beef</option>
+<option value="hummus">Hummus</option>
+</select>
+</div>
+
+<div data-role="fieldcontain">
+<label for="slider-cheese">Cheese?</label>
+<select name="slider-cheese" id="cheese" data-role="slider">
+  <option value="off">No</option>
+  <option values="on">Yes!</option>
+</select>
+</dive>
+
+<div data-role="fieldcontain">
+  <fieldset data-role="controlgroup">
+    <legend>Salsa (pick 2)</legend>
+      <input type="checkbox" name="choice-pico" id="choice-pico" />
+      <label for="choice-pico">Pico de Gallo</label>
+
+      <input type="checkbox" name="choice-verde" id="choice-verde" />
+      <label for="choice-verde">Salsa Verde</label>
+
+      <input type="checkbox" name="choice-special" id="choice-special" />
+      <label for="choice-special">Special of the day</label>
+  </fieldset>
+</div>
+
+<div data-role="fieldcontain">
+<label for="slider-guac">Guacamole? (+ $1.00)</label>
+<select name="slider-gauc" id="guac" data-role="slider">
+  <option value="off">No</option>
+  <option values="on">Yes!</option>
+</select>
+</dive>
+
+<div data-role="fieldcontain">
+    <fieldset data-role="controlgroup">
+    <legend>Sour Cream?</legend>
+         <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+         <label for="radio-choice-1">No Thanks</label>
+
+         <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+         <label for="radio-choice-2">Regular</label>
+
+         <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+         <label for="radio-choice-3">Non-fat</label>
+
+    </fieldset>
+</div>
+
+<div data-role="fieldcontain">
+  <fieldset data-role="controlgroup">
+    <legend>Veggies</legend>
+      <input type="checkbox" name="choice-lettuce" id="choice-lettuce" />
+      <label for="choice-lettuce">Lettuce</label>
+
+      <input type="checkbox" name="choice-cucumbers" id="choice-cucumbers" />
+      <label for="choice-cucumbers">Cucumbers</label>
+
+      <input type="checkbox" name="choice-jalapenos" id="choice-jalapenos" />
+      <label for="choice-jalapenos">Jalape&ntilde;os</label>
+  </fieldset>
+</div>
+
+<button type="submit" data-theme="a">Submit</button>
+
+<div data-role="footer"><h6><a href="#home">Home</a></h6></div> 
+<!-- /footer -->
+
+</div> 
+<!-- /page -->
+
+
+
+</body>
+</html>
